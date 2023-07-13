@@ -1,0 +1,273 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    background-color: #ddd;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'isi isi'
+    'footer footer';
+}
+
+.container header {
+    grid-area: header;
+    height: 10vh;
+    background-color: rgb(206, 58, 58);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    position: relative;
+}
+
+header .logo img {
+    width: 60px;
+    border-radius: 100%;
+    margin-left: 20px;
+}
+
+.user ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+ 
+.user ul li a {
+    text-decoration: none;
+    color: #dde;
+    font-weight: 600;
+    padding: 6px 17px;
+    display: block;
+}
+
+.user ul li a:hover {
+    background-color: #46527a;
+}
+
+.user ul li ul {
+    position: absolute;
+    display: none;
+    background-color: rgb(206, 58, 58);
+    border-radius: 0 0 5px 5px;
+    padding-top: 20px;
+}
+
+.user ul li:hover ul {
+    display: block;
+}
+
+.user ul li ul li {
+    /* line-height: 1; */
+    border-radius: 5px;
+    /* padding: 6px; */
+    margin-top: 20px;
+}
+
+.user ul li ul li a {
+    padding: 5px 15px;
+    width: 100px;
+
+}
+
+.user ul li ul li a:hover {
+    background-color: #46527a;
+}
+
+.isi {
+    grid-area: isi;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+}
+
+.isi nav {
+    background-color: #dde;
+    min-width: 200px;
+    border-right: 2px solid #000;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40vh;
+}
+
+nav ul li {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 2px;
+    padding-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav ul li a:hover {
+    color: rgb(206, 58, 58);
+}
+
+.isi .content {
+    background-color: white;
+    padding: 10px;
+}
+
+.tableProduct, .tablePark {
+    display: grid;
+    place-content: center;
+    margin-top: 20px;
+}
+
+.topTable {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    align-items: flex-end;
+}
+
+.topTable input {
+    width: 300px;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 1em;
+}
+
+.topTable button {
+    font-size: 1em;
+    padding: 5px 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.topTable button:hover {
+    background-color: rgb(206, 58, 58);
+    color: #fff;
+}
+
+.btnTambah {
+    background-color: rgb(206, 58, 58);
+    color: #ddd;
+    text-decoration: none;
+    border-radius: 5px 5px 0px 0px;
+    padding: 5px 5px 0px 5px;
+}
+
+.btnTambah:hover {
+    color: #000;
+}
+
+table tr * {
+    padding: 5px;
+    text-align: center;
+}
+
+table tr td a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+table tr td a:hover {
+    background-color: rgb(206, 58, 58);
+    border-radius: 2px;
+}
+
+table tr td img {
+    width: 100px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.formTambah {
+    display: grid;
+    place-content: center;
+    margin-top: 25px;
+}
+
+.formTambah form {
+    width: 500px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+}
+
+.formTambah .box {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.formTambah .box label {
+    padding: 5px;
+    width: 125px;
+    text-align: end;
+    font-weight: 600;
+}
+
+.box input {
+    width: 65%;
+    font-size: 1em;
+    padding-left: 5px;
+}
+
+.boxBtn {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.boxBtn button {
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.pagination {
+    display: grid;
+    place-content: center;
+    margin-top: 20px;
+}
+
+.pagination ul {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    list-style: none;
+}
+
+.pagination ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+    padding: 5px 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.pagination ul li a:hover {
+    background-color: rgb(206, 58, 58);
+    color: #dde;
+}
+
+.container footer {
+    grid-area: footer;
+    height: 10vh;
+    background-color: rgb(206, 58, 58);
+    display: grid;
+    place-content: center;
+}

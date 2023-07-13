@@ -1,0 +1,15 @@
+database web_basic
+
+> user
+ 1. id_user int 11 primary
+ 2. nama varchar 255 not null
+ 3. username varchar 255 not null
+ 4. password varchar 255 not null
+
+> product
+ 1. id_product int 11 primary
+ 2. nama_product varchar 255 not null
+ 3. brand_product varchar 255 not null
+ 4. jenis_product varchar 255 not null
+ 5. stock int 11 not null
+ 6. harga int 122 not null

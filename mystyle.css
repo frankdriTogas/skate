@@ -1,0 +1,468 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+._header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(8, 8, 8);
+}
+
+.logo img {
+    width: 120px;
+    padding-left: 40px;
+    border-radius: 100%;
+}
+
+.menu {
+    width: 50%;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.menu ul li a {
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 8px;
+    background-color: rgb(206, 58, 58);
+    border-radius: 3px;
+}
+
+.menu ul li a:hover {
+    color: rgb(206, 58, 58);
+    background-color: #000;
+}
+
+._content {
+    background-color: rgb(206, 58, 58);
+    box-shadow: 0px 30px 10px -20px rgba(0, 0, 0, 0.7);
+    padding-bottom: 20px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    /* background-color: #000; */
+    background-image: url("img/bgHero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
+    box-shadow: 0px 30px 10px -25px rgba(255, 255, 255, 0.7);
+
+}
+
+.hero img {
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 5px rgba(255, 255, 255, 0.5);
+}
+
+.hero p {
+    font-family: monospace;
+    font-size: 2.5rem;
+    background-color: rgba(231, 204, 48, .7);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.product {
+    margin: auto 40px;
+    padding-bottom: 20px;
+}
+
+.items {
+    border-radius: 50px;
+    background-color: #fff;
+    margin-bottom: 25px;
+}
+
+.items .hed {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.items .hed h3 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 30px;
+    margin-right: 5px;
+
+}
+
+.items .hed .line {
+    background-color: rgb(206, 58, 58);
+    width: 92%;
+    height: 3px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    place-items: center;
+}
+
+.item {
+    padding-bottom: 7px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 250px;
+    min-height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.item:hover {
+    border: 1px solid #29272750;
+    box-shadow: 0px 0px 5px 5px #3533331f;
+}
+
+.item img {
+    /* width: 100%; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: blue;
+}
+
+.item p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.item span b {
+    position: absolute;
+    top: 5px;
+    right: 2px;
+    width: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    color: #611c1c;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn a {
+    font-size: 1rem;
+    padding: 7px;
+    margin-right: 5px;
+    width: 60px ;
+    background-color: rgb(206, 58, 58);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn button:hover {
+    background-color: rgb(18, 119, 133);
+}
+
+.park {
+    border-radius: 5px;
+    margin: auto 40px;
+    background-color: rgb(34, 33, 33);
+    box-shadow: 0px 0px 15px 5px rgb(19, 18, 18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.park h3 {
+    margin-bottom: 20px;
+    padding: 10px;
+    position: relative;
+    letter-spacing: 1px;
+    width: 90%;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 2px 2px red;
+}
+
+.park h3::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    width: 45%;
+    height: 2px;
+    background-color: #fff;
+}
+
+.park h3::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 0;
+    width: 45%;
+    height: 2px;
+    background-color: #fff;
+}
+
+.boxPark {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 10px;
+    place-items: center;
+    width: 100%;
+}
+
+.itemx {
+    border: 1px solid #000;
+    box-shadow: 0px 0px 5px 5px #000;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.itemx p {
+    color: #fff;
+    padding: 7px;
+}
+
+.itemx img {
+    width: 450px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.itemx:hover {
+    cursor: pointer;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 5px 5px #fff;
+}
+
+
+.contact {
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: auto 40px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.contact h1 {
+    font-size: 1.2em;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.con {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    padding: 20px;
+    gap: 30px;
+}
+
+.con hr {
+    margin-bottom: 10px;
+}
+
+.boxContact form {
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255,.2);
+    border-radius: 5px;
+    /* margin: 20px; */
+    text-align: center;
+    padding: 15px;
+    padding-top: 25px;
+}
+
+.bx {
+    display: grid;
+    grid-template-columns: 20% auto;
+    margin-bottom: 7px;
+    gap: 5px;
+}
+
+.bx label {
+    font-weight: 600;
+}
+
+.bx input, .bx textarea {
+    padding: 3px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: none;
+}
+
+.bxx {
+    display: grid;
+    grid-template-columns: auto 120px 120px;
+}
+
+.bxx button {
+    margin: 15px;
+    padding: 3px 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.bxx button:hover {
+    background-color: darkorange;
+}
+
+
+.boxSosmed {
+    text-align: center;
+}
+
+.boxSosmed ul {
+    list-style: none;
+}
+
+.boxSosmed ul li {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+.boxSosmed ul li a {
+    text-decoration: none;
+}
+
+.boxSosmed ul li img {
+    width: 100px;
+}
+
+.support {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100px);
+    gap: 5px;
+}
+
+.support li {
+    background-color: blue;
+}
+
+.support li a {
+    background-color: #fff;
+    padding: 5px 7px;
+}
+
+._footer {
+    text-align: center;
+    padding-top: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    min-height: 5vh;   
+    position: relative;
+}
+.btnUp {
+    background-color: rgb(25, 148, 42);
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 20px;
+    right: 20px;
+    float: right;
+    border-radius: 5px;
+}
+
+.btnUp:hover {
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.btnUp a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.sell {
+    height: 90vh;
+    margin: auto 40px;
+}
+
+.confirmSell {
+    display: grid;
+    place-content: center;
+    background-color: #412f2f34;
+    padding: 50px;
+}
+
+.boxConfirm {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 5px #fff;
+}
+
+.bxImg img {
+    padding: 5px;
+    width: 100%;
+    max-height: 500px;
+}
+
+.bxPay form {
+    display: grid;
+    place-content: center;
+    gap: 20px;
+}
+
+.bxPay .bx1 input {
+    width: 30px;
+    font-size: 1em;
+}
+
+.bxPay form button {
+    padding: 5px 7px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* Responsive Breakpoint */
+@media (max-width: 1204px) {
+    .hero .info {
+        position: absolute;
+        right: 25%;
+    }
+
+    .hero p {
+        background-color: rgba(255, 255, 255, 0.7);
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .con {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
